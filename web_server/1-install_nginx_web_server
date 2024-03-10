@@ -4,7 +4,7 @@ sudo apt-get update
 sudo apt-get install nginx
 sudo ufw "Nginx HTTP"
 
-echo "Holberton School for the win!" | sudo tee /var/www/html/index.html
+echo Holberton School for the win! | sudo tee /var/www/html/index.html
 
 sudo nginx -t
 sudo service nginx reload
