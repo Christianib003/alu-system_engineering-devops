@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # connect to server using config file
-Host school
-    IdentifyFile ~/.ssh/school
-    PasswordAuthentication no
-    HostName 3.80.55.11
-    User ubuntu
+IdentifyFile ~/.ssh/school
+PasswordAuthentication no
+HostName 3.80.55.11
+User ubuntu
