@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# script of task 0 but using less lines
+# same as task 0 but -f added to ln to forcefully remove the file if it exists
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx restart
-kill "$(pgrep 'nginx' | head -1)"
+sudo service nginx restart
+rm /run/nginx.pid
